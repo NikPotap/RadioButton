@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_button">20sp</dimen>
+    <dimen name="text_size_question_and_answers">18sp</dimen>
+
+    <dimen name="margin_left_radiobutton">20dp</dimen>
+    <dimen name="margin_top_button">15dp</dimen>
+    <dimen name="margin_top_title_question_and_answers">15dp</dimen>
+    <dimen name="margin_top_result_layout">30dp</dimen>
+    <dimen name="margin_horizontal_result_meaning">10dp</dimen>
+
+</resources>

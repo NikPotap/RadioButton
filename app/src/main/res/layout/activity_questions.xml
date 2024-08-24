@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".QuestionsActivity">
+
+    <TextView
+        android:id="@+id/questionTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_title_question_and_answers"
+        android:text="@string/questions_title"
+        android:textSize="@dimen/text_size_title" />
+
+    <TextView
+        android:id="@+id/questionTextTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/text_size_question_and_answers" />
+
+    <TextView
+        android:id="@+id/answersTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_title_question_and_answers"
+        android:text="@string/answers"
+        android:textSize="@dimen/text_size_title" />
+
+    <RadioGroup
+        android:id="@+id/answersRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/answerOneRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_radiobutton"
+            android:hint="1"
+            android:textSize="@dimen/text_size_question_and_answers" />
+
+        <RadioButton
+            android:id="@+id/answerTwoRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_radiobutton"
+            android:hint="2"
+            android:textSize="@dimen/text_size_question_and_answers" />
+
+        <RadioButton
+            android:id="@+id/answerThreeRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_radiobutton"
+            android:hint="3"
+            android:textSize="@dimen/text_size_question_and_answers" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextQuestionBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_button"
+        android:text="@string/next_question_button_text"
+        android:textSize="@dimen/text_size_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_titleTV"
+        app:layout_constraintVertical_bias="0.1" />
+</LinearLayout>

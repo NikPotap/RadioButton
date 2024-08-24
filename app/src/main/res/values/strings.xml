@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Я историк</string>
+    <string name="app_title">Викторина «Я историк»</string>
+    <string name="run_vict_button_text">Пройти викторину</string>
+    <string name="next_question_button_text">Следующий вопрос</string>
+    <string name="result_is_5">Отлично!</string>
+    <string name="result_is_4">Неплохо.</string>
+    <string name="result_is_3">Могло бы быть и получше...</string>
+    <string name="result_is_2">Вам стоило бы почитать книги по истории.</string>
+    <string name="result_is_1">Нет никаких сомнений, об истории вы не знаете ничего.</string>
+    <string name="result_is_0">Вы в школе учились?</string>
+    <string name="result_text_part_one">Ваш результат: </string>
+    <string name="result_text_part_two">баллов.</string>
+    <string name="questions_title">"Вопрос номер "</string>
+    <string name="answers">"Варианты ответов:"</string>
+    <string name="error_answer_not_selected">Выберите ответ!</string>
+    <string name="result_rate">Оценка результата.</string>
+</resources>
