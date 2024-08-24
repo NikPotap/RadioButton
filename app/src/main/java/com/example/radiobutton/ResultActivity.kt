@@ -10,7 +10,6 @@ import androidx.core.view.WindowInsetsCompat
 class ResultActivity : AppCompatActivity() {
     private lateinit var rezultTV: TextView
     private lateinit var resultRateTV: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

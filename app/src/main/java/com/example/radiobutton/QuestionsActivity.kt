@@ -22,7 +22,6 @@ class QuestionsActivity : AppCompatActivity() {
     private lateinit var answerTwoRB: RadioButton
     private lateinit var answerThreeRB: RadioButton
     private lateinit var nextQuestionBTN: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,7 +32,6 @@ class QuestionsActivity : AppCompatActivity() {
             insets
         }
         var numberOfQuestion = intent.getStringExtra("numberOfQuestion").toString().toInt()
-
         var result = intent.getStringExtra("result").toString().toInt()
 
         questionTitleTV = findViewById(R.id.questionTitleTV)
@@ -46,7 +44,7 @@ class QuestionsActivity : AppCompatActivity() {
         nextQuestionBTN = findViewById(R.id.nextQuestionBTN)
 
         questionTitleTV.text =
-            resources.getString(R.string.questions_title) + (numberOfQuestion+1).toString() + "."
+            resources.getString(R.string.questions_title) + (numberOfQuestion + 1).toString() + "."
         questionTextTV.text = quiz[numberOfQuestion][0]
         answerOneRB.text = quiz[numberOfQuestion][1]
         answerTwoRB.text = quiz[numberOfQuestion][2]
@@ -63,7 +61,7 @@ class QuestionsActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             val rButton: RadioButton = findViewById(button)
-            if (rButton.hint == quiz[numberOfQuestion][4]){
+            if (rButton.hint == quiz[numberOfQuestion][4]) {
                 result += 100
             }
             numberOfQuestion++
